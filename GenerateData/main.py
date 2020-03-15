@@ -14,7 +14,6 @@ winkelwerte = np.linspace(-100, 100, 25)
 groundTruth = np.zeros((winkelwerte.size*100,)) 
 for runTenTimes in range(0, 100):
     for k in range(0, winkelwerte.size):
-        startTime = time.time()
         M = np.int( np.around(301*np.sqrt(2)) ) # = rho
         N = 2001
         thetabereich = 1
